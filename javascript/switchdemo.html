@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+           document.writeln("<h3> Menu </h3>");
+           document.writeln("<b>1. Add</b>");
+           document.writeln("<br><b>2. Sub</b>");
+           document.writeln("<br><b>3. Mul</b>");
+           document.writeln("<br><b>4. Div</b>");
+
+           var ch=1;
+           var a=20;
+           var b=40;
+           var c;
+
+           switch(ch){
+            case 1:c=a+b;
+                   document.writeln("<br>Answer:"+c);
+                   break;
+
+            case 2:c=a-b;
+                   document.writeln("<br>Answer:"+c); 
+                   break;
+                   
+            case 3:c=a*b;
+                   document.writeln("<br>Answer:"+c);
+                   break;
+
+            case 4:c=a/b;
+                   document.writeln("<br>Answer:"+c);
+                   break;
+
+            default:document.writeln("<br>Wrong Choice")       
+
+           }
+        </script>
+    </head>
+</html>

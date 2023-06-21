@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            var colors=["red","Green","blue",1];
+            document.writeln(colors+"<hr>");
+
+            for(i=0;i<colors.length;i++){
+                document.writeln(colors[i]+"<br>");
+            }
+
+            colors.push("gray");
+            document.writeln(colors+"<hr>");
+
+            colors.pop();
+            document.writeln(colors+"<hr>");
+
+            colors.shift();
+            document.writeln(colors+"<hr>");
+
+            colors.shift();
+            document.writeln(colors+"<hr>");
+
+            colors.unshift("green");
+            document.writeln(colors+"<hr>");
+
+            colors.splice(1,0,"gray","red");
+            document.writeln(colors+"<hr>");
+
+            for(c of colors){
+                document.writeln(c+"<br>");
+            }
+        </script>
+    </head>
+</html>
