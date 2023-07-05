@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script>
+            var val1=0,val2=0,lastop="";
+             function press(x)
+            {
+                //digit
+               if(Number(x)>=0 && Number(x)<=9)
+               {
+                 val= document.getElementById("result").value;
+                 val=val+x;
+                 document.getElementById("result").value=val;;
+               }
+
+               //operator
+               else if(x=='+')
+               {
+                   val1=document.getElementById("result").value;
+                   val2=0;
+                   document.getElementById("result").value="";
+               }
+               else if(x=='-')
+               {
+                   val3=document.getElementById("result").value;
+                   val4=0;
+                   document.getElementById("result").value="";
+               }
+               else if(x=='=')
+               {
+                 val2=document.getElementById("result").value;
+                 sum=Number(val1)+Number(val2);
+                 document.getElementById("result").value=sum;
+
+                 val3=document.getElementById("result").value;
+                 sub=Number(val3)-Number(val4);
+                 document.getElementById("result").value=sub;
+
+
+               }
+           
+              
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="result" value="0" style="text-align:right;"><br><br>
+        <input type="submit" value="0" id="zero" onclick="press(0)">
+        <input type="submit" value="1" id="zero" onclick="press(1)">
+        <input type="submit" value="2" id="zero" onclick="press(2)">
+        <input type="submit" value="3" id="zero" onclick="press(3)">
+        <input type="submit" value="4" id="zero" onclick="press(4)"><br><br>
+        <input type="submit" value="5" id="zero" onclick="press(5)">
+        <input type="submit" value="6" id="zero" onclick="press(6)">
+        <input type="submit" value="7" id="zero" onclick="press(7)">
+        <input type="submit" value="8" id="zero" onclick="press(8)">
+        <input type="submit" value="4" id="zero" onclick="press(9)"><br><br>
+        <input type="submit" value="+" id="plus" onclick="press('+')">
+        <input type="submit" value="-" id="minus" onclick="press('-')">
+        <input type="submit" value="*" id="multiply" onclick="press('*')">
+        <input type="submit" value="/" id="divide" onclick="press('/')">
+        <input type="submit" value="=" id="equal" onclick="press('=')">
+    </body>
+</html>
