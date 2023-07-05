@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function square(x){
+                var y=x*x;
+                document.writeln("square of "+ x+" is=>>"+y);
+            }
+
+            square(10);
+
+            var array=[10,20,30,40,50];
+            var sum=sumarray(array);
+            document.writeln("<br>sum of array ele=>"+sum);
+
+             function sumarray(a){
+                var sum=0;
+                for(var i=0;i<a.length;i++){
+                    sum=sum+a[i];
+                }
+                return sum;
+             }
+        </script>
+    </head>
+</html>
